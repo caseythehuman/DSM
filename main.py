@@ -7,7 +7,7 @@ from src.hypergraph_builder import build_hypergraph, visualize_hypergraph
 
 def main():
     # Preprocess the text data
-    sentences = preprocess_text('data/diagnosis_characteristics.txt')
+    sentences = preprocess_text('data/DSM.txt')
     
     # Perform a fuzzy search
     query = input("Enter your search query: ")
