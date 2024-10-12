@@ -8,6 +8,11 @@ from src.hypergraph_builder import build_hypergraph, visualize_hypergraph
 def main():
     # Preprocess the text data
     sentences = preprocess_text('data/DSM.txt')
+    #Test the output sentences
+    print("Sample Sentences:")
+    for i, sentence in enumerate(sentences[:10]):  # Adjust the number as needed
+            print(f"{i+1}: {sentence}")
+
     
     # Perform a fuzzy search
     query = input("Enter your search query: ")
