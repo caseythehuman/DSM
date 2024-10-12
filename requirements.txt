@@ -1,0 +1,6 @@
+spacy
+nltk
+rapidfuzz
+hypernetx
+matplotlib
+networkx
