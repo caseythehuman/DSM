@@ -1,0 +1,13 @@
+{
+  "name": "Psychiatric Analyzer",
+  "image": "mcr.microsoft.com/vscode/devcontainers/python:0-3.9",  // Python 3.9 environment
+  "features": {
+    "docker-in-docker": "latest"
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "eamodio.gitlens"
+  ],
+  "postCreateCommand": "pip install spacy nltk fuzzywuzzy networkx matplotlib hypernetx plotly && python -m spacy download en_core_web_sm"
+}
